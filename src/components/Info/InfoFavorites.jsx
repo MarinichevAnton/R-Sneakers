@@ -11,7 +11,7 @@ const InfoFavorites = ({ title, image, description }) => {
             <img className="mb-20" width="80px" src={image} alt="Empty" />
             <h2>{title}</h2>
             <p className="opacity-6">{description}</p>
-            <Link to="">
+            <Link to="/">
             <b className='cu-p'>
                 <img className={styles.card} src="img/Button.png" width={245} height={55} alt="Arrow" onClick={() => setCartOpened(false)} />
             </b>
