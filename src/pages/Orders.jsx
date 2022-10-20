@@ -26,7 +26,7 @@ function Orders({ onClose, onRemove, items = [], opened }) {
     <div className="content p-40">
       <div className="d-flex align-center justify-between mb-40">
         <h1>Мои заказы</h1>
-        <h1>      <Link to="/R-Sneakers">
+        <h1>      <Link to="/R-Sneakers/">
           <b className='cu-p'>
             <img className={styles.card} src="img/Button.png" width={245} height={55} alt="Arrow" onClick={() => (false)} />
           </b>

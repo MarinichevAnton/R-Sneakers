@@ -124,7 +124,7 @@ function App() {
         <Header onClickCart={() => setCartOpened(true)} />
         <Slider />
         <Routes>
-          <Route path="/R-Sneakers"
+          <Route path="/R-Sneakers/"
             element={<Home
               items={items}
               cartItems={cartItems}
@@ -135,8 +135,8 @@ function App() {
               onAddToCart={onAddToCart}
               isLoading={isLoading}
             />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/orders" element={<Orders />} />
+          <Route path="/Favorites/" element={<Favorites />} />
+          <Route path="/Orders/" element={<Orders />} />
         </Routes>
         <Footer />
       </div>
