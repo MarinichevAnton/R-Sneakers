@@ -1,0 +1,27 @@
+footer {
+  margin: 0 auto !important;
+}
+
+footer {
+  border-bottom: 1px solid #eaeaea;
+
+  img {
+    margin-right: 15px;
+    animation: coin 3s infinite linear;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+}
+
+@keyframes coin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
