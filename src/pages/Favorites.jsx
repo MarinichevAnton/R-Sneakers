@@ -2,7 +2,6 @@ import React from 'react';
 import Card from '../components/Card';
 import InfoFavorites from '../components/Info/InfoFavorites';
 import AppContext from '../context';
-import { Link } from 'react-router-dom';
 
 function Favorites() {
   const { favorites, onAddToFavorite } = React.useContext(AppContext);
@@ -23,7 +22,7 @@ function Favorites() {
         <InfoFavorites
           title={'Закладок нет :('}
           description={'Вы ничего не добавили в закладки!'}
-          image={'../img/noFavorites.png'}
+          image={'/img/noFavorites.png'}
         />
       )}
     </div>
