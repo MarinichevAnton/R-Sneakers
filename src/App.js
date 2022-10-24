@@ -135,8 +135,24 @@ function App() {
               onAddToCart={onAddToCart}
               isLoading={isLoading}
             />} />
-          <Route path="/Favorites/" element={<Favorites />} />
-          <Route path="/Orders/" element={<Orders />} />
+          <Route path="/Favorites/" 
+            element={<Favorites items={items}
+              cartItems={cartItems}
+              searchValue={searchValue}
+              setSearchValue={setSearchValue}
+              onChangeSearchInput={onChangeSearchInput}
+              onAddToFavorite={onAddToFavorite}
+              onAddToCart={onAddToCart}
+              isLoading={isLoading}/>} />
+          <Route path="/Orders/" element={<Orders 
+            items={items}
+              cartItems={cartItems}
+              searchValue={searchValue}
+              setSearchValue={setSearchValue}
+              onChangeSearchInput={onChangeSearchInput}
+              onAddToFavorite={onAddToFavorite}
+              onAddToCart={onAddToCart}
+              isLoading={isLoading}/>} />
         </Routes>
         <Footer />
       </div>
