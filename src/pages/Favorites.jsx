@@ -22,7 +22,7 @@ function Favorites() {
         <InfoFavorites
           title={'Закладок нет :('}
           description={'Вы ничего не добавили в закладки!'}
-          image={'/img/noFavorites.png'}
+          image={'img/noFavorites.png'}
         />
       )}
     </div>
