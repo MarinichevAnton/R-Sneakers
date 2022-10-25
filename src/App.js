@@ -135,7 +135,7 @@ function App() {
               onAddToCart={onAddToCart}
               isLoading={isLoading}
             />} />
-          <Route path="/Favorites/" 
+          <Route path="/R-Sneakers/Favorites/" 
             element={<Favorites items={items}
               cartItems={cartItems}
               searchValue={searchValue}
@@ -144,7 +144,7 @@ function App() {
               onAddToFavorite={onAddToFavorite}
               onAddToCart={onAddToCart}
               isLoading={isLoading}/>} />
-          <Route path="/Orders/" element={<Orders 
+          <Route path="/R-Sneakers/Orders/" element={<Orders 
             items={items}
               cartItems={cartItems}
               searchValue={searchValue}
