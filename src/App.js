@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import Header from './components/Header';
 import Drawer from './components/Drawer';
@@ -9,8 +9,6 @@ import Favorites from './pages/Favorites';
 import Orders from './pages/Orders';
 import Slider from './components/Slider/Slider';
 import Footer from './components/Footer';
-
-
 
 function App() {
   const [items, setItems] = React.useState([]);
@@ -85,7 +83,10 @@ function App() {
         axios.delete(`https://634807d9db76843976b899cd.mockapi.io/favorites/${props.id}`);
         setFavorites((prev) => prev.filter((item) => Number(item.id) !== Number(props.id)));
       } else {
-        const { data } = await axios.post('https://634807d9db76843976b899cd.mockapi.io/favorites', props);
+        const { data } = await axios.post(
+          'https://634807d9db76843976b899cd.mockapi.io/favorites',
+          props,
+        );
         setFavorites((prev) => [...prev, data]);
       }
     } catch (error) {
@@ -119,40 +120,57 @@ function App() {
           items={cartItems}
           onClose={() => setCartOpened(false)}
           onRemove={onRemoveItem}
-          opened={cartOpened} />
+          opened={cartOpened}
+        />
 
         <Header onClickCart={() => setCartOpened(true)} />
         <Slider />
         <Routes>
-          <Route path="/R-Sneakers/"
-            element={<Home
-              items={items}
-              cartItems={cartItems}
-              searchValue={searchValue}
-              setSearchValue={setSearchValue}
-              onChangeSearchInput={onChangeSearchInput}
-              onAddToFavorite={onAddToFavorite}
-              onAddToCart={onAddToCart}
-              isLoading={isLoading}
-            />} />
-          <Route path="/R-Sneakers/Favorites/" 
-            element={<Favorites items={items}
-              cartItems={cartItems}
-              searchValue={searchValue}
-              setSearchValue={setSearchValue}
-              onChangeSearchInput={onChangeSearchInput}
-              onAddToFavorite={onAddToFavorite}
-              onAddToCart={onAddToCart}
-              isLoading={isLoading}/>} />
-          <Route path="/R-Sneakers/Orders/" element={<Orders 
-            items={items}
-              cartItems={cartItems}
-              searchValue={searchValue}
-              setSearchValue={setSearchValue}
-              onChangeSearchInput={onChangeSearchInput}
-              onAddToFavorite={onAddToFavorite}
-              onAddToCart={onAddToCart}
-              isLoading={isLoading}/>} />
+          <Route
+            path=""
+            element={
+              <Home
+                items={items}
+                cartItems={cartItems}
+                searchValue={searchValue}
+                setSearchValue={setSearchValue}
+                onChangeSearchInput={onChangeSearchInput}
+                onAddToFavorite={onAddToFavorite}
+                onAddToCart={onAddToCart}
+                isLoading={isLoading}
+              />
+            }
+          />
+          <Route
+            path="Favorites/"
+            element={
+              <Favorites
+                items={items}
+                cartItems={cartItems}
+                searchValue={searchValue}
+                setSearchValue={setSearchValue}
+                onChangeSearchInput={onChangeSearchInput}
+                onAddToFavorite={onAddToFavorite}
+                onAddToCart={onAddToCart}
+                isLoading={isLoading}
+              />
+            }
+          />
+          <Route
+            path="Orders/"
+            element={
+              <Orders
+                items={items}
+                cartItems={cartItems}
+                searchValue={searchValue}
+                setSearchValue={setSearchValue}
+                onChangeSearchInput={onChangeSearchInput}
+                onAddToFavorite={onAddToFavorite}
+                onAddToCart={onAddToCart}
+                isLoading={isLoading}
+              />
+            }
+          />
         </Routes>
         <Footer />
       </div>
