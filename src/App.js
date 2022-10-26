@@ -127,7 +127,7 @@ function App() {
         <Slider />
         <Routes>
           <Route
-            path=""
+            path="R-Sneakers/"
             element={
               <Home
                 items={items}
@@ -142,7 +142,7 @@ function App() {
             }
           />
           <Route
-            path="Favorites/"
+            path="favorites/"
             element={
               <Favorites
                 items={items}
@@ -157,7 +157,7 @@ function App() {
             }
           />
           <Route
-            path="Orders/"
+            path="orders/"
             element={
               <Orders
                 items={items}

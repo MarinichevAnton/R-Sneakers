@@ -15,14 +15,13 @@ function Favorites() {
         <div className="d-flex flex-wrap">
           {favorites.map((item, index) => (
             <Card key={index} favorited={true} onFavorite={onAddToFavorite} {...item} />
-
           ))}
         </div>
       ) : (
         <InfoFavorites
           title={'Закладок нет :('}
           description={'Вы ничего не добавили в закладки!'}
-          image={'img/noFavorites.png'}
+          image={'../img/noFavorites.png'}
         />
       )}
     </div>
