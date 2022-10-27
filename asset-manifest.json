@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/R-Sneakers/static/css/main.3b3801cd.css",
+    "main.css": "/R-Sneakers/static/css/main.c3de4b92.css",
     "main.js": "/R-Sneakers/static/js/main.756bb212.js",
     "static/media/Slider2.png": "/R-Sneakers/static/media/Slider2.1de1b23b347cd3ebb44e.png",
     "static/media/Slider3.jpg": "/R-Sneakers/static/media/Slider3.97c9db60c34c79ae2843.jpg",
     "static/media/Slider.jpg": "/R-Sneakers/static/media/Slider.5fac21c2073008a3163a.jpg",
     "index.html": "/R-Sneakers/index.html",
-    "main.3b3801cd.css.map": "/R-Sneakers/static/css/main.3b3801cd.css.map",
+    "main.c3de4b92.css.map": "/R-Sneakers/static/css/main.c3de4b92.css.map",
     "main.756bb212.js.map": "/R-Sneakers/static/js/main.756bb212.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b3801cd.css",
+    "static/css/main.c3de4b92.css",
     "static/js/main.756bb212.js"
   ]
 }
