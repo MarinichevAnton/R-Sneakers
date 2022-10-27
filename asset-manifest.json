@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/R-Sneakers/static/css/main.66e34ff4.css",
-    "main.js": "/R-Sneakers/static/js/main.1c92fb3c.js",
+    "main.css": "/R-Sneakers/static/css/main.11393c85.css",
+    "main.js": "/R-Sneakers/static/js/main.0211442c.js",
     "static/media/Slider2.png": "/R-Sneakers/static/media/Slider2.1de1b23b347cd3ebb44e.png",
     "static/media/Slider3.jpg": "/R-Sneakers/static/media/Slider3.97c9db60c34c79ae2843.jpg",
     "static/media/Slider.jpg": "/R-Sneakers/static/media/Slider.5fac21c2073008a3163a.jpg",
+    "static/media/noOrders.png": "/R-Sneakers/static/media/noOrders.174d66451092187fcdb6.png",
     "index.html": "/R-Sneakers/index.html",
-    "main.66e34ff4.css.map": "/R-Sneakers/static/css/main.66e34ff4.css.map",
-    "main.1c92fb3c.js.map": "/R-Sneakers/static/js/main.1c92fb3c.js.map"
+    "main.11393c85.css.map": "/R-Sneakers/static/css/main.11393c85.css.map",
+    "main.0211442c.js.map": "/R-Sneakers/static/js/main.0211442c.js.map"
   },
   "entrypoints": [
-    "static/css/main.66e34ff4.css",
-    "static/js/main.1c92fb3c.js"
+    "static/css/main.11393c85.css",
+    "static/js/main.0211442c.js"
   ]
 }
